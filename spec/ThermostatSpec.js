@@ -11,4 +11,8 @@ describe ("Thermostat", function() {
 		expect(thermostat.temperature).toEqual(20);
 	});
 
+	it('increases the temperature by 1 degree', function() {
+		expect(thermostat.up()).toEqual(21);
+	});
+
 });
