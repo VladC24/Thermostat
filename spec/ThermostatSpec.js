@@ -39,4 +39,9 @@ describe ("Thermostat", function() {
 		expect(thermostat.temperature).toEqual(25);
 	});
 
+	it('can switch power mode off', function() {
+		thermostat.powerSavingModeOff();
+		expect(thermostat.powerSavingMode).toBe(false);
+	});
+
 });

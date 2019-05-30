@@ -18,4 +18,8 @@ Thermostat.prototype.down = function() {
 	this.temperature -= 1;
 };
 
+Thermostat.prototype.powerSavingModeOff = function() {
+	this.powerSavingMode = false
+};
+
 
