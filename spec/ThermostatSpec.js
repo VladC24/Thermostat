@@ -12,7 +12,13 @@ describe ("Thermostat", function() {
 	});
 
 	it('increases the temperature by 1 degree', function() {
-		expect(thermostat.up()).toEqual(21);
+		thermostat.up();
+		expect(thermostat.temperature).toEqual(21);
+	});
+
+	it('decreases the temperature by 1 degree', function() {
+		thermostat.down();
+		expect(thermostat.temperature).toEqual(19);
 	});
 
 });
