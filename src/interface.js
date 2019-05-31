@@ -32,14 +32,15 @@ $( document ).ready(function() {
   });
 
   function updateTemperature() {
-    $("#showTemperature").text(thermostat.showTemperature() + ' C');
+    $("#showTemperature").text(thermostat.showTemperature() + '°C');
     if(thermostat.currentUsage() === 'Low Usage') {
     $('#showTemperature').css('color', 'blue')
   } else if(thermostat.currentUsage() === 'Medium Usage') {
-    $('#showTemperature').css('color', 'black')
+    $('#showTemperature').css('color', 'orange')
   } else {
     $('#showTemperature').css('color', 'red')
   }
   };
 
+  
 }); 

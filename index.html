@@ -10,16 +10,21 @@
       <script src="jquery.js"></script>
       <script src='src/Thermostat.js'></script>
       <script src='src/interface.js'></script>
-      
-        <h1 id='showTemperature' ></h1>
       <div>
-        
+        <h1 id='showTemperature' ></h1>
         <button class='temp_control' id='increase'>+</button>
         <button class='temp_control' id='decrease'>-</button>
         <h4> POWER SAVING MODE: <span id='Power-Saving-Mode'></span></h4>
         <button class='psm' id='psm_on'>ON</button>
         <button class='psm' id='psm_off'>OFF</button>
         <button class='reset' id='reset'>Reset</button>
+        <p>Current City: </p>
+        <select id='City'>
+          <option value='London'>London</option>
+          <option value='Tokyo'>Tokyo</option>
+          <option value='New_York'>New York</option>
+          <option value='Lima' id='Lima'>Lima</option>
+        </select>
       </div>
     </body>
   </center>
